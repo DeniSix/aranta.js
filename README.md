@@ -29,9 +29,12 @@ console.log(random.float())
 
 in browser:
 
-```js
-var random = new aranta.Random(new aranta.Algo.LinearCongruential())
-console.log(random.int())
+```html
+<script type="text/javascript" src="dist/aranta.js"></script>
+<script type="text/javascript">
+  var random = new aranta.Random(new aranta.Algo.LinearCongruential())
+  console.log(random.int())
+</script>
 ```
 
 or you can use it with [RequireJS](http://www.requirejs.org/), [AMD](https://github.com/amdjs/amdjs-api/wiki/AMD) and [LMD](https://github.com/azproduction/lmd) (i love it :kissing_closed_eyes:). For more info see how [Browserify](http://browserify.org/) works.
