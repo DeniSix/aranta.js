@@ -1,0 +1,6 @@
+demo
+dist
+test
+lib-cov
+coverage.html
+Makefile

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Aranta.js demo</title>
+    <script type="text/javascript" src="../dist/aranta.js"></script>
+    <script type="text/javascript" src="demo.js"></script>
+  </head>
+  <body>
+    <p>One click = 4096 points</p>
+    <button id="MersenneTwister"    onclick="drawPoints(this)"> MersenneTwister    </button>
+    <button id="LaggedFibonacci"    onclick="drawPoints(this)"> LaggedFibonacci    </button>
+    <button id="LinearCongruential" onclick="drawPoints(this)"> LinearCongruential </button>
+    <button id="clear"              onclick="clearCanvas()"   > Clear              </button>
+  <br/>
+    <canvas id="canvas" style="border: #000 1px solid; padding: 0; margin: 0;"></canvas>
+  </body>
+</html>

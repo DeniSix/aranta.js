@@ -1,0 +1,15 @@
+{ "name": "aranta"
+, "version": "0.0.1"
+, "main": "dist/aranta.js"
+, "ignore":
+  [ "lib"
+  , "test"
+  , ".gitignore"
+  , ".npmignore"
+  , ".travis.yml"
+  , "component.json"
+  , "index.js"
+  , "Makefile"
+  , "package.json"
+  ]
+}
