@@ -1,6 +1,6 @@
 { "name": "aranta"
 , "version": "0.0.1"
-, "description": "randomization framework"
+, "description": "Simple and flexible randomization framework"
 , "author": "Denis Shemanaev <denis@shemanaev.com>"
 , "devDependencies":
   { "mocha": "*"
@@ -11,10 +11,10 @@
   }
 , "license": "MIT"
 , "keywords": ["random", "mersenne twister", "lagged fibonacci", "linear congruential"]
-, "homepage": "https://github.com/denisix/aranta.js"
+, "homepage": "https://github.com/DeniSix/aranta.js"
 , "repository":
   { "type": "git"
-  , "url": "git://github.com/denisix/aranta.js.git"
+  , "url": "git://github.com/DeniSix/aranta.js.git"
   }
 , "engines":
   { "node": ">= 0.4.0"
