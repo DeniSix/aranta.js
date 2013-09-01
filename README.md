@@ -60,6 +60,10 @@ Library provides next PRNG algorithms:
 
   - [LinearCongruential](https://en.wikipedia.org/wiki/Linear_congruential_generator)
 
+    Options:
+    - `multiplier`
+    - `increment`
+
   - [LaggedFibonacci](https://en.wikipedia.org/wiki/Lagged_Fibonacci_generator)
 
     Options:
