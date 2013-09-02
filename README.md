@@ -82,3 +82,7 @@ $ make test
 ## License
 
 MIT
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/DeniSix/aranta.js/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
