@@ -37,17 +37,19 @@ in browser:
 </script>
 ```
 
-or you can use it with [RequireJS](http://www.requirejs.org/), [AMD](https://github.com/amdjs/amdjs-api/wiki/AMD) and [LMD](https://github.com/azproduction/lmd) (i love it :kissing_closed_eyes:). For more info see how [Browserify](http://browserify.org/) works.
+or you can use it with [RequireJS](http://www.requirejs.org/), [AMD](https://github.com/amdjs/amdjs-api/wiki/AMD) and
+[LMD](https://github.com/azproduction/lmd) (i love it :kissing_closed_eyes:).
+For more info see how [Browserify](http://browserify.org/) works.
 
 ## Random
 
 The main class for usage in your apps.
 
   - `.constructor(algo)` Create new `Random` instance with specified algorithm.
-  - `.int(max)` Get random integer on interval [0, max]. Default `max`: 0xffffffff.
+  - `.int([max])` Get random integer on interval [0, max]. Default `max`: 0xffffffff.
   - `.float()` Get random float value on interval [0.0, 1.0].
-  - `.bool(chance)` Get random boolean value with specified probability. Default `chance`: 50.
-  - `.reset()` Reset generator state with optional `seed`.
+  - `.bool([chance])` Get random boolean value with specified probability. Default `chance`: 50.
+  - `.reset([seed])` Reset generator state with optional `seed`.
 
 ## Algorithms
 
