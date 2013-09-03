@@ -26,15 +26,26 @@ module.exports = LinearCongruential
  * Int32 max value.
  */
 
-var MAX_UINT32 = 0xffffffff
+var MAX_UINT32 = 0x7fffffff
 
 /**
  * Setup new Linear Congruential random generator with `seed`.
  *
  * @param {Number} [seed] initial seed
+ *
+ * Options:
+ *
+ *   - `multiplier`
+ *   - `increment`
  */
 
-function LinearCongruential(seed) {
+function LinearCongruential(seed, options) {
+  options = options || {}
+
+  // Default values from ANSI C
+  this._multiplier = options.multiplier || 1103515245
+  this._increment = options.increment || 12345
+
   this._seed = (typeof seed !== 'undefined') ? seed : Date.now()
 
   this.reset()
@@ -60,7 +71,7 @@ LinearCongruential.prototype.reset = function(seed) {
  */
 
 LinearCongruential.prototype.next = function() {
-  return this._prev = (1103515245 * this._prev + 12345) % MAX_UINT32
+  return this._prev = (this._multiplier * this._prev + this._increment) % MAX_UINT32
 }
 
 },{}],3:[function(require,module,exports){
@@ -100,7 +111,7 @@ function LaggedFibonacci(seed, options) {
   this._lagK = options.k || 55
 
   this._seed = (typeof seed !== 'undefined') ? seed : Date.now()
-  this._history = []
+  this._history = new Array(this._lagK)
 
   this.reset()
 }
@@ -119,7 +130,6 @@ LaggedFibonacci.prototype.reset = function (seed) {
 
   /**
    * `Linear congruential generator` used to fill initial LFG history.
-   * See https://en.wikipedia.org/wiki/Linear_congruential_generator
    * P.S.: constants (3, 257, MAX_UINT32) are brazely stolen from FreeCiv.
    */
 
