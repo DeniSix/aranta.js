@@ -8,6 +8,7 @@
   , "jscoverage": "*"
   , "browserify": "*"
   , "uglify-js": "*"
+  , "chi-square": "*"
   }
 , "license": "MIT"
 , "keywords": ["random", "mersenne twister", "lagged fibonacci", "linear congruential"]
