@@ -1,14 +1,14 @@
 { "name": "aranta"
-, "version": "0.0.2"
+, "version": "0.0.3"
 , "description": "Simple and flexible randomization framework"
 , "author": "Denis Shemanaev <denis@shemanaev.com>"
 , "devDependencies":
-  { "mocha": "*"
-  , "should": "*"
+  { "mocha": "1.21.5"
+  , "should": "4.0.4"
   , "jscoverage": "*"
-  , "browserify": "*"
-  , "uglify-js": "*"
-  , "chi-square": "*"
+  , "browserify": "6.0.3"
+  , "uglify-js": "2.4.0"
+  , "chi-square": "0.0.1"
   }
 , "license": "MIT"
 , "keywords": ["random", "mersenne twister", "lagged fibonacci", "linear congruential"]

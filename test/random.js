@@ -33,7 +33,7 @@ describe('Random', function () {
 
   describe('.bool()', function () {
     it('should return boolean', function () {
-      random.bool().should.be.a('boolean')
+      random.bool().should.be.a.Boolean
     })
 
     it('should be false', function () {
