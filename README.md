@@ -4,7 +4,7 @@ Simple and flexible randomization framework.
 
 [![Build Status](https://travis-ci.org/DeniSix/aranta.js.png)](https://travis-ci.org/DeniSix/aranta.js)
 
-[Online demo](http://jsfiddle.net/DeniSix/g38sA/show/)
+[Online demo](http://jsfiddle.net/DeniSix/g38sA/)
 
 ## Installation
 
