@@ -8,7 +8,7 @@ var chi = require('chi-square')
 
 function calculateChiSquare(algo) {
   var BUF_SIZE = 8192
-    , PASSES_COUNT = 512
+    , PASSES_COUNT = 128
 
   var random = new aranta.Random(new algo)
     , buf = new Buffer(BUF_SIZE)
